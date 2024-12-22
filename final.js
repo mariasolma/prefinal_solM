@@ -10,25 +10,28 @@ cambiar();
 document.getElementById("boton").style.display="none";
 
 }
-function validar(valorT){
-    document.getElementById("form_validate");
-    prompt("complete datos")
+  
+function validateForm() {
+    let x = document.forms["myForm"]["fname"].value;
+    let y= document.forms["myForm"]["fape"].value;
+      let t= document.forms["myForm"]["fmail"].value;
+      let z= document.forms["myForm"]["fpass"].value;
+  
+    if ((x == "") || (y =="")||(t =="")|| (z =="")) {
+      alert("TODOS los campos deben ser completados. Gracias.");
+      return false;
+      
     }
-    document.getElementById("form_validate").onclick=function(){
-    validar(true);
+    
+    
+  
+       
 
     
-    }
+    
+    
+}
+ 
 
     // // // let nameUser= document.getElementById("nameU") console.log("nameU");
     
-    
- let textA= document.getElementById("textA");
- let primero=document.getElementById("primero")
- console.log(textA)
-let boton_1= document.getElementById("boton_1")
-boton_1.addEventListener("click", function(){
-
-  primero= textA.textContent
-})
-

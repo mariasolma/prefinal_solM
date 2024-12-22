@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preentrega</title>
+    <title>Entrega FINAL</title>
     <link rel="stylesheet" href="estilos.css">
 
     
@@ -18,8 +18,9 @@
        
         <nav>
                  <a href="#Nosotros"> Nosotros  </a>
+                 <a href="lista.html">Lista de Productos</a>
                  
-                 <a href="#Vos"> Sobre vos  </a>
+                 <a href="#Vos"> Sorpresa!  </a>
                 <a href="#Reseñas"> Reseñas  </a>
                 <a href="#Contacto"> Escribinos</a>
                 <a href="#Mapa"> Contacto</a>
@@ -29,8 +30,7 @@
         </header>
     <main>
     <div class="Nosotros" >  
-        <input  id= "textA" type="text" placeholder="Ingresa tu Nombre" >
-        <button id="boton_1" class="change"> CLICK AQUI!! </button>
+       
         <p id="primero">La Nueva Cocina. Nos renovamos para vos. </p>
        
         <p id="segundo">Somos un equipo de profesionales del mundo de la gastronomía.</p>
@@ -43,7 +43,7 @@
 
     <p id="principal"> Recetas deliciosas</p>
 
-    <button id="boton" class="change"> ¡¡Clik y Sorpresa!! </button>
+    <button id="boton" class="change"> Hace click y mira la sorpresa </button>
  
 
   
@@ -63,26 +63,17 @@
     <div id ="Contacto" class ="ContenedorF" >
         <p class="text_con"> Ingresa los datos de tu cuenta</p>
         
-        <form id="contacto" action="colecta.html">
-           <!-- componente -->
-        
-             <input type="text" placeholder="Nombre" maxlength="10">
-             <br>
-          
-             <input type="text" placeholder="Apellido" >
-             <br> 
-             <input type="email" placeholder="Mail" >
-             <br>
-             <input type="password" placeholder="Password" >
-             <br>
-            
-             <br> <br> 
-             <button id="form_validate"> VALIDAR!! </button>
-             <input type="submit"  value ="Enviar" >
-             <input type="reset" value ="Borrar">
-   
-   
-        </form> 
+        <h4 id="importante">Todos los campos son obligatorios </h4> </br>
+
+<form name="myForm" action="colecta.html" onsubmit="return validateForm()" method="post">
+  Nombre: <input type="text" name="fname"> </br> </br>
+    Apellido: <input type="text" name="fape"> </br> </br>
+       EMail: <input type="email"name="fmail" > </br> </br>
+           
+           Pass  <input type="password" name="fpass" > </br> </br>
+  <input class="btn" type="submit" value="ENVIAR">
+  <input class="btn" type="reset" value="CANCELAR">
+</form>
    
     </div>
     <div id ="Mapa" class="mapa" >

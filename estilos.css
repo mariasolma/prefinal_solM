@@ -7,6 +7,9 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin:0;
 }
+.prod{
+    background-color: aqua;
+}
 
 
 header {
@@ -106,14 +109,53 @@ nav{
     
 
 }
+#importante{
+    color: red;
+    text-decoration: double;
+    font-style: italic;
+}
+#lista{
+   margin: 10px;
+   pad: 10px;
+   color: rgb(199, 32, 180);
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+
+}
+
+#volver_{
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
 
 .change{
-    color: rgb(255, 64, 0);
+    color: rgb(46, 23, 222);
     text-decoration: dashed;
     padding: 10px;
+    font-style: italic;
 }
 #form_validate{
-    color: chartreuse;
+    color: rgb(222, 36, 7);
+    text-transform:uppercase;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+.btn{
+    color:blue;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    align-items: center;
+    margin-right: 20px;
+    font-style: italic;
 }
 .ContenedorF{
     display: flex;
@@ -131,8 +173,9 @@ nav{
     justify-content: center;
     align-items:center;
     background-color: rgb(185, 245, 73);
-    /* margin-top: 10px;
-    margin-bottom: 8px; */
+    padding-bottom: 20px;
+    
+    
   
 }
 #contacto{

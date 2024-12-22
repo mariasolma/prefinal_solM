@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="estilos.css">
+    <header> 
+      <a href="#" class="logo"> 
+          <img src="logo.png" alt ="logo de la empresa">  </img>
+          <h2>Lista de Productos</h2>
+      </a>
+     
+    
+        
+      </header>
+   
+<body>
+  
+</br>
+ 
+
+    <p id="demo"></p> </br>
+    <a  id="volver_"href="index.html" target="_blank"> VOLVER</a>
+
+    <script>
+    let x = "";
+    const myObj  = {
+      
+      comida: [
+        {name:"DULCE", models:["Torta de Chocolate", "Gelato", "Tiramisu", "Pasta Frola"]},
+        {name:"SALADO", models:["Tartas", "Milanesa Napolitana","Sorrentinos", "Plato del día"]},
+        {name:"BEBIDAS", models:["Vinos", "Bebidas", "Agua"]},
+        {name:"ENTRADAS", models:["Ensalada Rusa","Surtido de Quesos", "Papas"] }
+        
+      ]
+    }
+    
+    for (let i in myObj.comida) {
+      x += "<h2>" + myObj.comida[i].name + "</h2>"; ;
+      for (let j in myObj.comida[i].models) {
+        x += myObj.comida[i].models[j] + "<br>";
+      }
+    }
+    
+    document.getElementById("demo").innerHTML = x;
+    </script>
+    
+
+</body>
+</html>
